@@ -1,0 +1,31 @@
+<ion-content>
+  <!-- Comienzo container centrado -->
+  <div class="container">
+    <div class="center">
+      <div class="mensaje">
+        Escanea el código QR para sumar saldo a tu cuenta
+      </div>
+      <div class="saldoActual" *ngIf="creditoUsuario">
+        <h1>SALDO ACTUAL</h1>
+        <span class="saldo">{{creditoUsuario.saldo}}</span>
+      </div>
+      <!-- Comienzo Grilla de botones de crédito -->
+      <div class="botonera">
+        <ion-grid>
+          <ion-row>
+            <ion-col class="col">
+              <button class="buttonCargar button" (click)="scannearCredito()">ESCANEAR CRÉDITO</button>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="col">
+              <button  class="buttonLimpiar button" (click)="limpiarSaldo()">LIMPIAR SALDO</button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+       <!-- Fin Grilla de botones de crédito -->
+    </div>
+  </div>
+  <!-- Fin container centrado -->
+</ion-content>

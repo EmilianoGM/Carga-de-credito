@@ -1,0 +1,71 @@
+ion-content{
+  --background: url("../../assets/images/fondoqr.png") 0 0/100% 100% no-repeat; ;
+}
+
+.container{
+  display: flex !important;
+  height: 100%;
+  width: 100%;
+  margin:auto;
+}
+
+.center{
+  margin:auto;
+  //display: flex;
+  width: 95%;
+  //background-color: white;
+}
+
+.saldoActual{
+  font-family: 'ShareTech';
+  font-size: 3em;
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: 30px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #15f500;
+}
+
+.mensaje{
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  font-family: monospace;
+  color: #15f500;
+  -webkit-text-stroke-width: 0.6px;
+  -webkit-text-stroke-color: black;
+  letter-spacing: 3px;
+}
+
+.saldoActual h1{
+  font-size: 1.7em;
+}
+.saldo{
+  //font-family: 'ShareTech';
+  font-size: 3em;
+}
+
+.button{
+  font-size: 2.5em;
+  height: 100px;
+  font-family: 'VT';
+  width: 90%;
+  border-radius: 20px;
+  background-color: #97FD92;
+  box-shadow: 1px 1px 15px 8px rgba(0, 0, 0, 0.6);
+}
+
+.button:active{
+  box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.6);
+  color:white;
+  background-color:  rgba(3,101,22,1);
+}
+
+.button:focus {
+  border: none !important;
+  outline: none !important;
+}
+
+.col{
+  text-align: center;
+}

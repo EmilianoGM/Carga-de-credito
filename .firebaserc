@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "loginmanejador": {
+      "hosting": {
+        "app": [
+          "loginmanejador"
+        ]
+      }
+    }
+  }
+}

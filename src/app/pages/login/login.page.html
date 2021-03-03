@@ -1,0 +1,34 @@
+<ion-content>
+  <!-- Comienzo container centrado -->
+  <div class="container">
+    <div class="login-box">
+      <h2>Carga de crédito</h2>
+      <!-- Comienzo formulario de loggin -->
+      <form [formGroup]="validations_form" (ngSubmit)="loggearUsuario(validations_form.value)">
+        <!-- Item ingreso email -->
+        <div class="user-box">
+          <input type="text" name="email" formControlName="email">
+          <label>Correo</label>
+        </div>
+        <!-- Ion Item ingreso clave -->
+        <div class="user-box">
+          <input type="password" name="password" formControlName="password">
+          <label>Clave</label>
+        </div>
+        <!-- Botones ingreso  -->
+        <ion-button expand="block" class="submitButton" type="submit" [disabled]="!validations_form.valid">INGRESAR</ion-button>
+      </form>
+      <!-- Fin formulario de loggin -->
+    </div>
+    <!-- Comienzo Menu despliegue de usuarios -->
+    <div class="bottom">
+      <button class="roundButton" (click)="precargarUsuario(1)" >AD</button>
+      <button class="roundButton" (click)="precargarUsuario(2)">I</button>
+      <button class="roundButton" (click)="precargarUsuario(3)">U</button>
+      <button class="roundButton" (click)="precargarUsuario(5)">T</button>
+      <button class="roundButton" (click)="precargarUsuario(4)">AN</button>
+    </div>
+    <!-- Fin Menu despliegue de usuarios -->
+  </div>
+  <!-- Fin container centrado -->
+</ion-content>

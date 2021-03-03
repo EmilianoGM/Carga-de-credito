@@ -1,0 +1,13 @@
+{
+  "appId": "emi.credito.app",
+  "appName": "Carga de crédito",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 5000
+    }
+  },
+  "cordova": {}
+}

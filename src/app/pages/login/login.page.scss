@@ -1,0 +1,113 @@
+ion-content {
+  font-family: 'Goldmen';
+  --background: url("../../assets/images/fondoLogin.jpg") 0 0/100% 100% no-repeat;
+}
+  
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.692);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    font-size: 1.3em;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #53fa40;
+    font-size: 12px;
+  }
+  
+  
+  .errorText{
+      font-size: 0.8em;
+      text-align: center;
+
+  }
+
+.bottom{
+    position: absolute; 
+                bottom: 0; 
+                width: 100%;
+                //border: 1px solid red;
+                display: flex;
+                justify-content: space-around;
+}
+
+.container{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.roundButton{
+    font-family: 'Goldman';
+    border-radius: 100%;
+    border-color: transparent;
+    font-size: 1.5em;
+    width: 15%;
+    height: 50px;
+    color: rgba(3,101,22,1);
+    box-shadow: 1px 1px 15px 8px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.roundButton:active{
+    box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.6);
+    color:white;
+    background-color:  rgba(3,101,22,1);
+}
+
+.roundButton:focus {
+    border: none !important;
+    outline: none !important;
+  }
+
+ion-button{
+  text-align: center;
+  font-size: 1em;
+  --background: #97FD92;
+  color: #C70039;
+  letter-spacing: 10px;
+}
